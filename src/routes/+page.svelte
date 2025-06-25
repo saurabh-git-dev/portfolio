@@ -38,8 +38,9 @@
 			<p class="text-justify text-xs">
 				The website is made in Svelte and publicly available here <a
 					class="text-indigo-300/75 underline"
-					href="https://github.com/{PUBLIC_GITHUB_USERNAME}/portfolio/issues"
+					href="https://github.com/{PUBLIC_GITHUB_USERNAME}/portfolio"
 					target="_blank"
+					rel="noopener noreferrer"
 				>
 					{PUBLIC_GITHUB_USERNAME}/portfolio
 				</a>. Tried Svelte and Bun for the first time, so there might be some issues. If you find
@@ -48,6 +49,7 @@
 					class="text-indigo-300/75 underline"
 					href="https://github.com/{PUBLIC_GITHUB_USERNAME}/portfolio/issues"
 					target="_blank"
+					rel="noopener noreferrer"
 				>
 					{PUBLIC_GITHUB_USERNAME}/portfolio/issues
 				</a>.

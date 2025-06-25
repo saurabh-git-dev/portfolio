@@ -228,6 +228,8 @@
 				<span class="font-semibold text-indigo-300">AI inference</span> on the video streams using
 				<a
 					href="https://hailo.ai/products/ai-accelerators/hailo-8-m2-ai-acceleration-module/"
+					target="_blank"
+					rel="noopener noreferrer"
 					class="font-semibold text-indigo-300 underline underline-offset-1"
 				>
 					Hailo Accelerators
@@ -245,6 +247,8 @@
 				<span class="font-semibold text-indigo-300">Github Actions</span>. And also
 				<a
 					href="https://github.com/saurabh-git-dev/GX-Titatnium-2122A"
+					target="_blank"
+					rel="noopener noreferrer"
 					class="font-semibold text-indigo-300 underline">enabled bridge mode</a
 				>
 				by bypassing the locked ISP router. Which gave me almost full control over the network.

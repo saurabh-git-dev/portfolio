@@ -38,7 +38,7 @@
 						<a
 							href="//socialrivals.co.uk"
 							target="_blank"
-							referrerpolicy="strict-origin"
+							rel="noopener noreferrer"
 							class="text-xs text-indigo-300 underline"
 							>socialrivals.co.uk
 						</a>
@@ -79,12 +79,14 @@
 						<a
 							href="https://en.wikipedia.org/wiki/Intel_8085"
 							target="_blank"
+							rel="noopener noreferrer"
 							class="font-semibold text-indigo-300 underline">Intel 8085</a
 						>
 						and
 						<a
 							href="https://en.wikipedia.org/wiki/MOS_Technology_6502"
 							target="_blank"
+							rel="noopener noreferrer"
 							class="font-semibold text-indigo-300 underline">6502 Microprocessor</a
 						>).
 					</p>
@@ -96,9 +98,10 @@
 							Inspired by <a
 								href="https://www.youtube.com/@BenEater"
 								target="_blank"
+								rel="noopener noreferrer"
 								class="font-semibold text-indigo-300 underline">@Ben Eater</a
-							> ❤️ and his amazing work on building a computer from scratch using logic gates and ICs. He
-							has a great series on building an 8-bit computer, which was my primary source of inspiration
+							> ❤️ and his amazing work on building a computer from scratch using logic gates and ICs.
+							He has a great series on building an 8-bit computer, which was my primary source of inspiration
 							for this project.
 						</p>
 					</div>
@@ -143,17 +146,19 @@
 						<a
 							href="//tictaclap.com"
 							target="_blank"
-							referrerpolicy="strict-origin"
+							rel="noopener noreferrer"
 							class="text-xs text-indigo-300 underline"
 							>tictaclap.com
 						</a>
 					</div>
-					<h6 class="text-xs font-semibold text-indigo-300">TicTacLap - Physical Education Project (2022)</h6>
+					<h6 class="text-xs font-semibold text-indigo-300">
+						TicTacLap - Physical Education Project (2022)
+					</h6>
 					<p class="text-justify text-xs text-neutral-300">
 						This project was a digital platform designed to support physical education (PE) teachers
 						with tools for organizing and managing classes. It offers features like class creation,
-						students import sheets, and a toolbox for everyday PE activities—such as team
-						creation and live student views for various sports activities.
+						students import sheets, and a toolbox for everyday PE activities—such as team creation
+						and live student views for various sports activities.
 					</p>
 				</div>
 			</li>
@@ -172,7 +177,7 @@
 						<a
 							href="//puttabove.co.uk"
 							target="_blank"
-							referrerpolicy="strict-origin"
+							rel="noopener noreferrer"
 							class="text-xs text-indigo-300 underline"
 							>puttabove.co.uk
 						</a>
