@@ -1,0 +1,40 @@
+<script>
+	import { PUBLIC_USER_EMAIL, PUBLIC_GITHUB_USERNAME } from '$env/static/public';
+</script>
+
+<div class="mx-auto max-w-4xl pt-4" id="contact">
+	<div
+		class="flex flex-col justify-center gap-4 rounded-lg border border-neutral-800 bg-neutral-800 p-4 text-neutral-200 shadow-lg"
+	>
+		<div class="flex flex-col items-center justify-center gap-2 text-sm font-semibold">
+			<a
+				href="#contact"
+				class="group flex items-center gap-2 text-neutral-400 underline underline-offset-2"
+				>Contact
+			</a>
+			<p>
+				<span class="text-indigo-300">
+					<a href="mailto:{PUBLIC_USER_EMAIL}">{PUBLIC_USER_EMAIL}</a>
+				</span>
+			</p>
+		</div>
+		<p class="text-center text-xs text-neutral-300">
+			Feel free to reach out to me for any queries, suggestions.
+		</p>
+		<p class="text-xs text-neutral-400 italic">
+			I don't prefer to disclose any more information about myself publicly. I believe value of work
+			is more important. So will recommend you to check out my <a
+				class="text-indigo-300 underline"
+				href="https://github.com/{PUBLIC_GITHUB_USERNAME}"
+				target="_blank"
+			>
+				Github
+			</a>
+			Profile. I am not active on other social media platforms, so for any queries or suggestions, please
+			reach out to me via
+			<span class="text-indigo-300">
+				<a href="mailto:{PUBLIC_USER_EMAIL}"> email </a>
+			</span>.
+		</p>
+	</div>
+</div>

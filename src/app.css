@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+* {
+	font-family: Hack, monospace;
+}
+
+html {
+	@apply scroll-smooth;
+}
