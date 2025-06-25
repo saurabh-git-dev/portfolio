@@ -117,6 +117,11 @@
 			name: 'Unity',
 			icon: '/images/unity-white.png',
 			class: 'w-7'
+		},
+		{
+			name: 'Arduino',
+			icon: '/images/arduino.png',
+			class: 'w-11'
 		}
 	];
 
