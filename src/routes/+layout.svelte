@@ -5,7 +5,7 @@
 		PUBLIC_GITHUB_USERNAME,
 		PUBLIC_LINKED_IN_USERNAME,
 		PUBLIC_FIVERR_USERNAME,
-		PUBLIC_GOOGLE_ANALYTICS_ID,
+		PUBLIC_GOOGLE_ANALYTICS_ID
 	} from '$env/static/public';
 </script>
 
@@ -29,16 +29,20 @@
 	<meta name="profile:fiverr" content={PUBLIC_FIVERR_USERNAME} />
 
 	<!-- Google Analytics -->
-	 {#if PUBLIC_GOOGLE_ANALYTICS_ID}
-	<script async src="https://www.googletagmanager.com/gtag/js?id={PUBLIC_GOOGLE_ANALYTICS_ID}" data-nscript="afterInteractive"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', PUBLIC_GOOGLE_ANALYTICS_ID);
-	</script>
+	{#if PUBLIC_GOOGLE_ANALYTICS_ID}
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id={PUBLIC_GOOGLE_ANALYTICS_ID}"
+			data-nscript="afterInteractive"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', PUBLIC_GOOGLE_ANALYTICS_ID);
+		</script>
 	{/if}
 </svelte:head>
 
