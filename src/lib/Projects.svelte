@@ -44,7 +44,7 @@
 						</a>
 					</div>
 					<h6 class="text-xs font-semibold text-indigo-300">
-						Working on multiple Tech Stacks (2024 - Still Ongoing)
+						Working on multiple Tech Stacks (2024 - Still)
 					</h6>
 					<p class="text-justify text-xs text-neutral-300">
 						This is my recent project where I am working with Social Rivals to build a gaming
@@ -183,15 +183,15 @@
 						</a>
 					</div>
 					<h6 class="text-xs font-semibold text-indigo-300">
-						My First(also Big) Paid Project in 2021 (Still work with them)
+						My First(also Big) Paid Project in 2021 (Still working with them)
 					</h6>
 					<p class="text-justify text-xs text-neutral-300">
 						This project was a great opportunity for me to learn and grow as a developer. I was able
-						to work on various aspects of the project, including front-end development, back-end
-						integration, and multiple networking protocols. This was not polished to perfection (as
-						I was still new to programming), but it was a valuable learning experience while working
-						with a real client. They showed trust in my skills. So, I was able to learn and
-						implement real-world solutions.
+						to work on various aspects of the project, including game development, web development,
+						networking, embedded devices. The code was initially not up to any standard (as I was
+						still new to programming), but it was a valuable learning experience while working with
+						a real client. They trusted my skills. So, I was able to learn and improve the codebase
+						over time.
 					</p>
 				</div>
 				<iframe
