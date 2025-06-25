@@ -4,16 +4,16 @@
 
 <div class="mx-auto max-w-4xl pt-4">
 	<div
-		class="flex flex-col justify-center gap-4 rounded-lg border border-neutral-800 bg-neutral-800 p-4 text-neutral-200 shadow-lg"
+		class="flex flex-col justify-center gap-4 rounded-lg border-none sm:border border-neutral-800 bg-transparent sm:bg-neutral-800 p-0 sm:p-4 text-neutral-200 shadow-lg"
 	>
-		<h2 class="text-lg font-semibold" id="milestones">
+		<h2 class="text-lg font-semibold px-2 sm:px-0" id="milestones">
 			<a class="group flex items-center gap-2" href="#milestones">
 				Milestones<Link />
 			</a>
 		</h2>
 		<ul class="flex list-disc flex-wrap gap-4">
 			<li
-				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-900 p-4 md:flex-row"
+				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 sm:bg-neutral-900 p-4 md:flex-row"
 				id="milestones-socialrivals"
 			>
 				<iframe
@@ -54,7 +54,7 @@
 				</div>
 			</li>
 			<li
-				class="flex flex-col gap-4 rounded-lg bg-neutral-900 p-4 md:flex-row"
+				class="flex flex-col gap-4 rounded-lg bg-neutral-800 sm:bg-neutral-900 p-4 md:flex-row"
 				id="milestones-8-bit-computer"
 			>
 				<div class="flex flex-col gap-2">
@@ -123,7 +123,7 @@
 				/>
 			</li>
 			<li
-				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-900 p-4 md:flex-row"
+				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 sm:bg-neutral-900 p-4 md:flex-row"
 				id="milestones-tictaclap"
 			>
 				<video
@@ -163,7 +163,7 @@
 				</div>
 			</li>
 			<li
-				class="flex flex-col gap-4 rounded-lg bg-neutral-900 p-4 md:flex-row"
+				class="flex flex-col gap-4 rounded-lg bg-neutral-800 sm:bg-neutral-900 p-4 md:flex-row"
 				id="milestones-puttabove"
 			>
 				<div class="flex flex-col gap-2">
@@ -207,7 +207,7 @@
 				></iframe>
 			</li>
 			<li
-				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-900 p-4 md:flex-row"
+				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 sm:bg-neutral-900 p-4 md:flex-row"
 				id="milestones-library-management"
 			>
 				<video
