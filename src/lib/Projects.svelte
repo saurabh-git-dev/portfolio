@@ -4,16 +4,16 @@
 
 <div class="mx-auto max-w-4xl pt-4">
 	<div
-		class="flex flex-col justify-center gap-4 rounded-lg border-none sm:border border-neutral-800 bg-transparent sm:bg-neutral-800 p-0 sm:p-4 text-neutral-200 shadow-lg"
+		class="flex flex-col justify-center gap-4 rounded-lg border-none border-neutral-800 bg-transparent p-0 text-neutral-200 shadow-lg sm:border sm:bg-neutral-800 sm:p-4"
 	>
-		<h2 class="text-lg font-semibold px-2 sm:px-0" id="milestones">
+		<h2 class="px-2 text-lg font-semibold sm:px-0" id="milestones">
 			<a class="group flex items-center gap-2" href="#milestones">
 				Milestones<Link />
 			</a>
 		</h2>
 		<ul class="flex list-disc flex-wrap gap-4">
 			<li
-				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 sm:bg-neutral-900 p-4 md:flex-row"
+				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 p-4 sm:bg-neutral-900 md:flex-row"
 				id="milestones-socialrivals"
 			>
 				<iframe
@@ -54,7 +54,7 @@
 				</div>
 			</li>
 			<li
-				class="flex flex-col gap-4 rounded-lg bg-neutral-800 sm:bg-neutral-900 p-4 md:flex-row"
+				class="flex flex-col gap-4 rounded-lg bg-neutral-800 p-4 sm:bg-neutral-900 md:flex-row"
 				id="milestones-8-bit-computer"
 			>
 				<div class="flex flex-col gap-2">
@@ -123,7 +123,7 @@
 				/>
 			</li>
 			<li
-				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 sm:bg-neutral-900 p-4 md:flex-row"
+				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 p-4 sm:bg-neutral-900 md:flex-row"
 				id="milestones-tictaclap"
 			>
 				<video
@@ -163,7 +163,7 @@
 				</div>
 			</li>
 			<li
-				class="flex flex-col gap-4 rounded-lg bg-neutral-800 sm:bg-neutral-900 p-4 md:flex-row"
+				class="flex flex-col gap-4 rounded-lg bg-neutral-800 p-4 sm:bg-neutral-900 md:flex-row"
 				id="milestones-puttabove"
 			>
 				<div class="flex flex-col gap-2">
@@ -207,7 +207,7 @@
 				></iframe>
 			</li>
 			<li
-				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 sm:bg-neutral-900 p-4 md:flex-row"
+				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 p-4 sm:bg-neutral-900 md:flex-row"
 				id="milestones-library-management"
 			>
 				<video
@@ -220,12 +220,21 @@
 				>
 				</video>
 				<div class="flex flex-col gap-2">
-					<h3 class="text-sm font-semibold">
-						<a href="#milestones-library-management" class="group flex items-center gap-2"
-							>Library Management System
-							<Link />
+					<div class="flex justify-between">
+						<h3 class="text-sm font-semibold">
+							<a href="#milestones-library-management" class="group flex items-center gap-2"
+								>Library Management System
+								<Link />
+							</a>
+						</h3>
+						<a
+							href="https://github.com/saurabh-git-dev/C-library-management"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-xs text-indigo-300 underline"
+							>Repository
 						</a>
-					</h3>
+					</div>
 					<h6 class="text-xs font-semibold text-indigo-300">C Based CLI Application (2020)</h6>
 					<p class="text-justify text-xs text-neutral-300">
 						This project was my first project when I started learning C programming. It is a CLI
