@@ -1,12 +1,13 @@
 <script>
 	import { PUBLIC_GITHUB_USERNAME } from '$env/static/public';
+	import Flag from '$lib/Flag.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import Navbar from '$lib/Navbar.svelte';
 	import Projects from '$lib/Projects.svelte';
 	import TechStacks from '$lib/TechStacks.svelte';
 </script>
 
-<div class="min-h-screen bg-neutral-900 p-4 text-white">
+<div class="background min-h-screen bg-neutral-900 p-4 text-white">
 	<Navbar />
 	<div class="mx-auto max-w-4xl pt-4">
 		<div
@@ -14,8 +15,14 @@
 		>
 			<p class="text-justify text-sm">
 				Hi there! I'm <span class="font-semibold text-indigo-300">Saurabh</span>, a full stack
-				developer but also have skills in different fields and technologies. I graduated with a
-				Bachelor's degree in
+				developer based in
+				<span class="font-semibold text-indigo-300">
+					<Flag /> India
+				</span>. In addition to full-stack development, I also have a certain level of knowledge and
+				skills in other different technologies and fields.
+			</p>
+			<p class="text-justify text-sm">
+				I graduated with a Bachelor's degree in
 				<span class="font-semibold text-indigo-300">
 					Electronics and Communication Engineering (2023)
 				</span>.
