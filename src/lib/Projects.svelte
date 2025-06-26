@@ -4,7 +4,7 @@
 
 <div class="mx-auto max-w-4xl pt-4">
 	<div
-		class="flex flex-col justify-center gap-4 rounded-lg border-none border-neutral-800 bg-transparent p-0 text-neutral-200 shadow-lg sm:border sm:bg-neutral-800 sm:p-4"
+		class="flex flex-col justify-center gap-4 rounded-lg border-none bg-transparent p-0 text-neutral-900 shadow-none sm:border sm:bg-neutral-100 sm:p-4 sm:shadow-sm dark:text-neutral-200 dark:sm:bg-neutral-800 dark:sm:shadow-lg"
 	>
 		<h2 class="px-2 text-lg font-semibold sm:px-0" id="milestones">
 			<a class="group flex items-center gap-2" href="#milestones">
@@ -13,7 +13,7 @@
 		</h2>
 		<ul class="flex list-disc flex-wrap gap-4">
 			<li
-				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 p-4 sm:bg-neutral-900 md:flex-row"
+				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-100 p-4 shadow-sm sm:bg-neutral-200/40 sm:shadow-none md:flex-row dark:bg-neutral-800 dark:sm:bg-neutral-900"
 				id="milestones-socialrivals"
 			>
 				<iframe
@@ -39,14 +39,14 @@
 							href="//socialrivals.co.uk"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="text-xs text-indigo-300 underline"
+							class="text-xs text-indigo-500 underline dark:text-indigo-300"
 							>socialrivals.co.uk
 						</a>
 					</div>
-					<h6 class="text-xs font-semibold text-indigo-300">
+					<h6 class="text-xs font-semibold text-indigo-500 dark:text-indigo-300">
 						Working on multiple Tech Stacks (2024 - Still)
 					</h6>
-					<p class="text-justify text-xs text-neutral-300">
+					<p class="text-justify text-xs">
 						This is my recent project where I am working with Social Rivals to build a gaming
 						platform where we are rebuilding classic games with modern technologies that provides a
 						completely new experience to the users.
@@ -54,7 +54,7 @@
 				</div>
 			</li>
 			<li
-				class="flex flex-col gap-4 rounded-lg bg-neutral-800 p-4 sm:bg-neutral-900 md:flex-row"
+				class="flex flex-col gap-4 rounded-lg bg-neutral-100 p-4 shadow-sm sm:bg-neutral-200/40 sm:shadow-none md:flex-row dark:bg-neutral-800 dark:sm:bg-neutral-900"
 				id="milestones-8-bit-computer"
 			>
 				<div class="flex flex-col gap-2">
@@ -64,15 +64,17 @@
 							<Link />
 						</a>
 					</h3>
-					<h6 class="text-xs font-semibold text-indigo-300">
+					<h6 class="text-xs font-semibold text-indigo-500 dark:text-indigo-300">
 						Fully Based on Logical Gate ICs, EEPROMs, RAM and a few other ICs (2021-2022)
 					</h6>
-					<p class="text-justify text-xs text-neutral-300">
+					<p class="text-justify text-xs">
 						I started this project to learn about computer architecture and how computers started
 						working back in the day. This project is a simple 8-bit microcomputer that can run basic
 						programs at this stage only (Addition, Subtraction). I planned to add more features like
 						Logical operations, Multiplication, Division, and Interrupts handling in the future.
-						Also planning to write a a <span class="font-semibold text-indigo-300">
+						Also planning to write a a <span
+							class="font-semibold text-indigo-500 dark:text-indigo-300"
+						>
 							Assembler
 						</span>
 						for this computer to make it easier to write programs(Similar to
@@ -80,26 +82,27 @@
 							href="https://en.wikipedia.org/wiki/Intel_8085"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="font-semibold text-indigo-300 underline">Intel 8085</a
+							class="font-semibold text-indigo-500 underline dark:text-indigo-300">Intel 8085</a
 						>
 						and
 						<a
 							href="https://en.wikipedia.org/wiki/MOS_Technology_6502"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="font-semibold text-indigo-300 underline">6502 Microprocessor</a
+							class="font-semibold text-indigo-500 underline dark:text-indigo-300"
+							>6502 Microprocessor</a
 						>).
 					</p>
 
 					<div
-						class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 text-neutral-200 shadow-lg"
+						class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 shadow-sm dark:shadow-lg"
 					>
 						<p class="text-justify text-xs">
 							Inspired by <a
 								href="https://www.youtube.com/@BenEater"
 								target="_blank"
 								rel="noopener noreferrer"
-								class="font-semibold text-indigo-300 underline">@Ben Eater</a
+								class="font-semibold text-indigo-500 underline dark:text-indigo-300">@Ben Eater</a
 							> ❤️ and his amazing work on building a computer from scratch using logic gates and ICs.
 							He has a great series on building an 8-bit computer, which was my primary source of inspiration
 							for this project.
@@ -107,7 +110,7 @@
 					</div>
 
 					<div
-						class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 text-neutral-200 shadow-lg"
+						class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 shadow-sm dark:shadow-lg"
 					>
 						<p class="text-justify text-xs">
 							The project is incomplete. A lot of things that I had planned to do were not possible
@@ -123,7 +126,7 @@
 				/>
 			</li>
 			<li
-				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 p-4 sm:bg-neutral-900 md:flex-row"
+				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-100 p-4 shadow-sm sm:bg-neutral-200/40 sm:shadow-none md:flex-row dark:bg-neutral-800 dark:sm:bg-neutral-900"
 				id="milestones-tictaclap"
 			>
 				<video
@@ -147,14 +150,14 @@
 							href="//tictaclap.com"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="text-xs text-indigo-300 underline"
+							class="text-xs text-indigo-500 underline dark:text-indigo-300"
 							>tictaclap.com
 						</a>
 					</div>
-					<h6 class="text-xs font-semibold text-indigo-300">
+					<h6 class="text-xs font-semibold text-indigo-500 dark:text-indigo-300">
 						TicTacLap - Physical Education Project (2022)
 					</h6>
-					<p class="text-justify text-xs text-neutral-300">
+					<p class="text-justify text-xs">
 						This project was a digital platform designed to support physical education (PE) teachers
 						with tools for organizing and managing classes. It offers features like class creation,
 						students import sheets, and a toolbox for everyday PE activities—such as team creation
@@ -163,7 +166,7 @@
 				</div>
 			</li>
 			<li
-				class="flex flex-col gap-4 rounded-lg bg-neutral-800 p-4 sm:bg-neutral-900 md:flex-row"
+				class="flex flex-col gap-4 rounded-lg bg-neutral-100 p-4 shadow-sm sm:bg-neutral-200/40 sm:shadow-none md:flex-row dark:bg-neutral-800 dark:sm:bg-neutral-900"
 				id="milestones-puttabove"
 			>
 				<div class="flex flex-col gap-2">
@@ -178,14 +181,14 @@
 							href="//puttabove.co.uk"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="text-xs text-indigo-300 underline"
+							class="text-xs text-indigo-500 underline dark:text-indigo-300"
 							>puttabove.co.uk
 						</a>
 					</div>
-					<h6 class="text-xs font-semibold text-indigo-300">
+					<h6 class="text-xs font-semibold text-indigo-500 dark:text-indigo-300">
 						My First(also Big) Paid Project in 2021 (Still working with them)
 					</h6>
-					<p class="text-justify text-xs text-neutral-300">
+					<p class="text-justify text-xs">
 						This project was a great opportunity for me to learn and grow as a developer. I was able
 						to work on various aspects of the project, including game development, web development,
 						networking, embedded devices. The code was initially not up to any standard (as I was
@@ -207,7 +210,7 @@
 				></iframe>
 			</li>
 			<li
-				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-800 p-4 sm:bg-neutral-900 md:flex-row"
+				class="flex flex-col-reverse gap-4 rounded-lg bg-neutral-100 p-4 shadow-sm sm:bg-neutral-200/40 sm:shadow-none md:flex-row dark:bg-neutral-800 dark:sm:bg-neutral-900"
 				id="milestones-library-management"
 			>
 				<video
@@ -231,12 +234,14 @@
 							href="https://github.com/saurabh-git-dev/C-library-management"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="text-xs text-indigo-300 underline"
+							class="text-xs text-indigo-500 underline dark:text-indigo-300"
 							>Repository
 						</a>
 					</div>
-					<h6 class="text-xs font-semibold text-indigo-300">C Based CLI Application (2020)</h6>
-					<p class="text-justify text-xs text-neutral-300">
+					<h6 class="text-xs font-semibold text-indigo-500 dark:text-indigo-300">
+						C Based CLI Application (2020)
+					</h6>
+					<p class="text-justify text-xs">
 						This project was my first project when I started learning C programming. It is a CLI
 						based application that allows users to manage a library system, including adding,
 						removing, and searching for books, issuing, returning books. It uses custom data

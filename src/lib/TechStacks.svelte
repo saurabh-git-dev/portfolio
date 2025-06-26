@@ -33,7 +33,7 @@
 		{
 			name: 'Flask',
 			icon: '/images/Flask.png',
-			class: 'w-8 invert'
+			class: 'w-8 dark:invert'
 		},
 		{
 			name: 'FastAPI',
@@ -106,7 +106,7 @@
 		{
 			name: 'SocketIO',
 			icon: '/images/socketio.png',
-			class: 'w-8'
+			class: 'w-8 invert dark:invert-0'
 		},
 		{
 			name: 'AWS',
@@ -116,7 +116,7 @@
 		{
 			name: 'Unity',
 			icon: '/images/unity-white.png',
-			class: 'w-7'
+			class: 'w-7 invert dark:invert-0'
 		},
 		{
 			name: 'Arduino',
@@ -156,7 +156,7 @@
 
 <div class="mx-auto max-w-4xl pt-4">
 	<div
-		class="flex flex-col justify-center gap-4 rounded-lg border border-neutral-800 bg-neutral-800 p-4 text-neutral-200 shadow-lg"
+		class="flex flex-col justify-center gap-4 rounded-lg border border-neutral-200 bg-neutral-100 p-4 text-neutral-900 shadow-sm dark:border-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 dark:shadow-lg"
 	>
 		<h2 class="text-lg font-semibold" id="languages">
 			<a class="group flex items-center gap-2" href="#languages">
@@ -165,13 +165,13 @@
 		</h2>
 		<ul class="flex list-disc flex-wrap gap-4">
 			{#each languages as lang (lang.name)}
-				<li class="flex flex-col items-center gap-2 text-neutral-300" title={lang.name}>
+				<li class="flex flex-col items-center gap-2" title={lang.name}>
 					<img src={lang.icon} alt={lang.name} class={`inline ${lang.class}`} />
 				</li>
 			{/each}
 		</ul>
 		<div
-			class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 text-neutral-200 shadow-lg"
+			class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 shadow-sm dark:shadow-lg"
 		>
 			<p class="text-justify text-xs">
 				Discovered
@@ -187,7 +187,7 @@
 
 <div class="mx-auto max-w-4xl pt-4">
 	<div
-		class="flex flex-col justify-center gap-4 rounded-lg border border-neutral-800 bg-neutral-800 p-4 text-neutral-200 shadow-lg"
+		class="flex flex-col justify-center gap-4 rounded-lg border border-neutral-200 bg-neutral-100 p-4 text-neutral-900 shadow-sm dark:border-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 dark:shadow-lg"
 	>
 		<h2 class="text-lg font-semibold" id="frameworks">
 			<a class="group flex items-center gap-2" href="#frameworks">
@@ -196,7 +196,7 @@
 		</h2>
 		<ul class="flex list-disc flex-wrap gap-4">
 			{#each frameworks as framework (framework.name)}
-				<li class="flex flex-col items-center gap-2 text-neutral-300" title={framework.name}>
+				<li class="flex flex-col items-center gap-2" title={framework.name}>
 					<img src={framework.icon} alt={framework.name} class={`inline ${framework.class}`} />
 				</li>
 			{/each}
@@ -206,7 +206,7 @@
 
 <div class="mx-auto max-w-4xl pt-4">
 	<div
-		class="flex flex-col justify-center gap-4 rounded-lg border border-neutral-800 bg-neutral-800 p-4 text-neutral-200 shadow-lg"
+		class="flex flex-col justify-center gap-4 rounded-lg border border-neutral-200 bg-neutral-100 p-4 text-neutral-900 shadow-sm dark:border-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 dark:shadow-lg"
 	>
 		<h2 class="text-lg font-semibold" id="tools">
 			<a class="group flex items-center gap-2" href="#tools">
@@ -215,46 +215,55 @@
 		</h2>
 		<ul class="flex list-disc flex-wrap gap-4">
 			{#each tools as tool (tool.name)}
-				<li class="flex flex-col items-center gap-2 text-neutral-300" title={tool.name}>
+				<li class="flex flex-col items-center gap-2" title={tool.name}>
 					<img src={tool.icon} alt={tool.name} class={`inline ${tool.class}`} />
 				</li>
 			{/each}
 		</ul>
 		<div
-			class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 text-neutral-200 shadow-lg"
+			class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 shadow-sm dark:shadow-lg"
 		>
 			<p class="text-justify text-xs">
 				Gstreamer is a powerful tool for handling multimedia processing, and I have been using it
-				for processing videos streams, with custom <span class="font-semibold text-indigo-300">
+				for processing videos streams, with custom <span
+					class="font-semibold text-indigo-500 dark:text-indigo-300"
+				>
 					plugins and elements
 				</span>
 				in
-				<span class="font-semibold text-indigo-300"> C++ OpenCV </span> and performing
-				<span class="font-semibold text-indigo-300">AI inference</span> on the video streams using
+				<span class="font-semibold text-indigo-500 dark:text-indigo-300"> C++ OpenCV </span> and
+				performing
+				<span class="font-semibold text-indigo-500 dark:text-indigo-300">AI inference</span> on the
+				video streams using
 				<a
 					href="https://hailo.ai/products/ai-accelerators/hailo-8-m2-ai-acceleration-module/"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="font-semibold text-indigo-300 underline underline-offset-1"
+					class="font-semibold text-indigo-500 underline underline-offset-1 dark:text-indigo-300"
 				>
 					Hailo Accelerators
 				</a>.
 			</p>
 		</div>
 		<div
-			class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 text-neutral-200 shadow-lg"
+			class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 shadow-sm dark:shadow-lg"
 		>
 			<p class="text-justify text-xs">
-				Recently tried out <span class="font-semibold text-indigo-300"> OpenWRT </span>
-				Firmware on <span class="font-semibold text-indigo-300">Raspberrypi </span>, and it is
-				absolutely amazing for managing my small networking needs. I am creating my custom firmware
-				with some pre configured settings and pre installed softwares on
-				<span class="font-semibold text-indigo-300">Github Actions</span>. And also
+				Recently tried out <span class="font-semibold text-indigo-500 dark:text-indigo-300">
+					OpenWRT
+				</span>
+				Firmware on
+				<span class="font-semibold text-indigo-500 dark:text-indigo-300">Raspberrypi </span>, and it
+				is absolutely amazing for managing my small networking needs. I am creating my custom
+				firmware with some pre configured settings and pre installed softwares on
+				<span class="font-semibold text-indigo-500 dark:text-indigo-300">Github Actions</span>. And
+				also
 				<a
 					href="https://github.com/saurabh-git-dev/GX-Titatnium-2122A"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="font-semibold text-indigo-300 underline">enabled bridge mode</a
+					class="font-semibold text-indigo-500 underline dark:text-indigo-300"
+					>enabled bridge mode</a
 				>
 				by bypassing the locked ISP router. Which gave me almost full control over the network.
 			</p>
@@ -264,7 +273,7 @@
 
 <div class="mx-auto max-w-4xl pt-4">
 	<div
-		class="flex flex-col justify-center gap-4 rounded-lg border border-neutral-800 bg-neutral-800 p-4 text-neutral-200 shadow-lg"
+		class="flex flex-col justify-center gap-4 rounded-lg border border-neutral-200 bg-neutral-100 p-4 text-neutral-900 shadow-sm dark:border-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 dark:shadow-lg"
 	>
 		<h2 class="text-lg font-semibold" id="cloud">
 			<a class="group flex items-center gap-2" href="#cloud">
@@ -273,23 +282,23 @@
 		</h2>
 		<ul class="flex list-disc flex-wrap gap-4">
 			{#each clouds as cloud (cloud.name)}
-				<li class="flex flex-col items-center gap-2 text-neutral-300" title={cloud.name}>
+				<li class="flex flex-col items-center gap-2" title={cloud.name}>
 					<img src={cloud.icon} alt={cloud.name} class={`inline ${cloud.class}`} />
 				</li>
 			{/each}
 		</ul>
 		<div
-			class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 text-neutral-200 shadow-lg"
+			class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 shadow-sm dark:shadow-lg"
 		>
 			<p class="text-justify text-xs">
 				From Last 2 years, AWS is my prefered cloud provider, if there are multiple things to
 				deploy. I have been working with ECS, Lambda, S3, Cloudfront and other services and <span
-					class="font-semibold text-indigo-300"
+					class="font-semibold text-indigo-500 dark:text-indigo-300"
 				>
 					Github Actions
 				</span>
-				for <span class="font-semibold text-indigo-300">CI/CD</span> is my one stop solution. Waiting
-				for ARM runners to try out for private projects.
+				for <span class="font-semibold text-indigo-500 dark:text-indigo-300">CI/CD</span> is my one stop
+				solution. Waiting for ARM runners to try out for private projects.
 			</p>
 		</div>
 	</div>

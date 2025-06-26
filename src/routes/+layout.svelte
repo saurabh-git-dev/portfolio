@@ -44,6 +44,17 @@
 			gtag('config', PUBLIC_GOOGLE_ANALYTICS_ID);
 		</script>
 	{/if}
+
+	<script>
+		(function () {
+			const stored = localStorage.getItem('theme');
+			const system = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const isDark = stored === 'dark' || (!stored && system);
+			if (isDark) {
+				document.documentElement.classList.add('dark');
+			}
+		})();
+	</script>
 </svelte:head>
 
 <slot />
