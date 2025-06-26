@@ -32,7 +32,7 @@
 			<p class="text-justify text-sm">
 				Currently working 💼 on integrating Tools, APIs, Embedded devices, and Networking. Learning
 				🌱 Unity and gradually diving deeper into Machine Learning<span
-					class="after:animate-blink relative after:absolute after:left-full after:content-['|']"
+					class="after:animate-blink relative ml-2 after:absolute after:left-full after:content-['|']"
 				></span>
 			</p>
 		</div>
