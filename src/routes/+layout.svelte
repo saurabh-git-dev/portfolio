@@ -37,11 +37,12 @@
 		></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
+			const id = `${PUBLIC_GOOGLE_ANALYTICS_ID}`;
 			function gtag() {
 				dataLayer.push(arguments);
 			}
 			gtag('js', new Date());
-			gtag('config', PUBLIC_GOOGLE_ANALYTICS_ID);
+			gtag('config', id);
 		</script>
 	{/if}
 
