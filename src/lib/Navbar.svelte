@@ -5,29 +5,7 @@
 		PUBLIC_LINKED_IN_USERNAME
 	} from '$env/static/public';
 
-	import { onMount } from 'svelte';
-
-	let isDark = false;
-
-	// Load preference
-	onMount(() => {
-		const stored = localStorage.getItem('theme');
-		const system = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-		isDark = stored === 'dark' || (!stored && system);
-		setHtmlClass();
-	});
-
-	function toggleTheme() {
-		isDark = !isDark;
-		localStorage.setItem('theme', isDark ? 'dark' : 'light');
-		setHtmlClass();
-	}
-
-	function setHtmlClass() {
-		const root = document.documentElement;
-		root.classList.toggle('dark', isDark);
-	}
+	import ThemeMode from './ThemeMode.svelte';
 </script>
 
 <div class="mx-auto max-w-4xl">
@@ -43,7 +21,7 @@
 			/>
 			<h1 class="text-center text-lg font-semibold sm:text-2xl">Saurabh 🚀</h1>
 		</div>
-		<div class="flex flex-row items-center justify-end gap-2 sm:gap-6">
+		<div class="flex flex-row items-center justify-end gap-3 sm:gap-6">
 			<a
 				href="https://github.com/{PUBLIC_GITHUB_USERNAME}"
 				target="_blank"
@@ -70,17 +48,7 @@
 			>
 				<img src="/images/fiverr.png" alt="Fiverr Logo" class="inline h-6 w-6 sm:h-7 sm:w-7" />
 			</a>
-			<button
-				on:click={toggleTheme}
-				id="theme-toggle"
-				class="flex h-7 w-7 cursor-pointer items-center justify-center rounded-full bg-neutral-300 transition-colors sm:h-8 sm:w-8 dark:bg-neutral-900"
-			>
-				{#if isDark}
-					🌞
-				{:else}
-					<span class="rotate-[30deg]"> 🌛 </span>
-				{/if}
-			</button>
+			<ThemeMode />
 		</div>
 	</nav>
 </div>
