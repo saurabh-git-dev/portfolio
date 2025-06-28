@@ -1,10 +1,10 @@
 <script>
 	import { PUBLIC_GITHUB_USERNAME } from '$env/static/public';
-	import Flag from '$lib/Flag.svelte';
-	import Footer from '$lib/Footer.svelte';
-	import Navbar from '$lib/Navbar.svelte';
-	import Projects from '$lib/Projects.svelte';
-	import TechStacks from '$lib/TechStacks.svelte';
+	import Flag from '../components/Flag.svelte';
+	import Footer from '../components/Footer.svelte';
+	import Navbar from '../components/Navbar.svelte';
+	import Projects from '../components/Projects.svelte';
+	import TechStacks from '../components/TechStacks.svelte';
 </script>
 
 <div
