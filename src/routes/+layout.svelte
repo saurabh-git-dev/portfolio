@@ -40,7 +40,10 @@
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="Saurabh 🚀 | A Tech Developer" />
-	<meta property="og:description" content="Welcome to Saurabh's portfolio!" />
+	<meta
+		property="og:description"
+		content="Explore Saurabh's portfolio! Passionate about Systems⚙️, Microcontrollers🕹️, IoT🌐, Web Apps🌍, Microservices🛠️, Cloud ☁️, and more. Discover projects and skills across modern technologies. 🔃"
+	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://{PUBLIC_SITE_URL}/" />
 	<meta property="og:image" content="https://{PUBLIC_SITE_URL}/profile.png" />
