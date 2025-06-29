@@ -35,7 +35,7 @@
 
 <svelte:head>
 	<title>Saurabh 🚀 | A Tech Developer</title>
-	<meta name="description" content="Welcome to Saurabh's portfolio!" />
+	<meta name="description" content="Explore Saurabh's portfolio! Passionate about Systems⚙️, Microcontrollers🕹️, IoT🌐, Web Apps🌍, Microservices🛠️, Cloud ☁️, and more. Discover projects and skills across modern technologies. 🔃" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Open Graph -->
