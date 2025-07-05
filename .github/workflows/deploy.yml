@@ -1,0 +1,60 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: bun.lock
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: build
+        env:
+          PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL }}
+          PUBLIC_GITHUB_USERNAME: ${{ vars.PUBLIC_GITHUB_USERNAME }}
+          PUBLIC_LINKED_IN_USERNAME: ${{ vars.PUBLIC_LINKED_IN_USERNAME }}
+          PUBLIC_FIVERR_USERNAME: ${{ vars.PUBLIC_FIVERR_USERNAME }}
+          PUBLIC_USER_EMAIL: ${{ vars.PUBLIC_USER_EMAIL }}
+          PUBLIC_GOOGLE_ANALYTICS_ID: ${{ vars.PUBLIC_GOOGLE_ANALYTICS_ID }}
+          PUBLIC_BLOG_URL: ${{ vars.PUBLIC_BLOG_URL }}
+        run: |
+          bun run build
+
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'build/'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: production
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
