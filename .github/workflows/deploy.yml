@@ -32,7 +32,6 @@ jobs:
           PUBLIC_LINKED_IN_USERNAME: ${{ vars.PUBLIC_LINKED_IN_USERNAME }}
           PUBLIC_FIVERR_USERNAME: ${{ vars.PUBLIC_FIVERR_USERNAME }}
           PUBLIC_USER_EMAIL: ${{ vars.PUBLIC_USER_EMAIL }}
-          PUBLIC_GOOGLE_ANALYTICS_ID: ${{ vars.PUBLIC_GOOGLE_ANALYTICS_ID }}
           PUBLIC_BLOG_URL: ${{ vars.PUBLIC_BLOG_URL }}
         run: |
           bun run build
