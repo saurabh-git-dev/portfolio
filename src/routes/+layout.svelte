@@ -4,33 +4,8 @@
 		PUBLIC_SITE_URL,
 		PUBLIC_GITHUB_USERNAME,
 		PUBLIC_LINKED_IN_USERNAME,
-		PUBLIC_FIVERR_USERNAME,
-		PUBLIC_GOOGLE_ANALYTICS_ID
+		PUBLIC_FIVERR_USERNAME
 	} from '$env/static/public';
-	import { onMount } from 'svelte';
-
-	const gaId = PUBLIC_GOOGLE_ANALYTICS_ID;
-
-	// Google Analytics
-	onMount(() => {
-		if (!gaId) return;
-
-		// Load GA script
-		const script1 = document.createElement('script');
-		script1.setAttribute('async', '');
-		script1.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
-		document.head.appendChild(script1);
-
-		// Init GA
-		const script2 = document.createElement('script');
-		script2.innerHTML = `
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', '${gaId}');
-		`;
-		document.head.appendChild(script2);
-	});
 </script>
 
 <svelte:head>
