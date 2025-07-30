@@ -21,3 +21,13 @@ html {
 		20px 20px;
 	background-size: 30px 30px;
 }
+
+.theme-icon {
+	display: none;
+}
+
+[data-theme='dark'] .theme-icon-dark,
+[data-theme='light'] .theme-icon-light,
+[data-theme='system'] .theme-icon-system {
+	display: inline;
+}

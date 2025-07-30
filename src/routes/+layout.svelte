@@ -37,10 +37,14 @@
 		(function () {
 			const stored = localStorage.getItem('theme');
 			const system = window.matchMedia('(prefers-color-scheme: dark)').matches;
-			const isDark = stored === 'dark' || (!stored && system);
+			const theme = stored || 'system';
+			const isDark = theme === 'dark' || (theme === 'system' && system);
+
 			if (isDark) {
 				document.documentElement.classList.add('dark');
 			}
+
+			document.documentElement.setAttribute('data-theme', theme);
 		})();
 	</script>
 </svelte:head>
