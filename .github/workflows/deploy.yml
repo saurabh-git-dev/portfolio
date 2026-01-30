@@ -2,8 +2,6 @@ name: Deploy to GitHub Pages
 
 on:
   workflow_dispatch:
-  push:
-    branches: 'main'
 
 jobs:
   build:
@@ -12,19 +10,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
-          cache-dependency-path: bun.lock
+          node-version: 24
+
+      - uses: pnpm/action-setup@v4
 
       - name: Install dependencies
-        run: bun install
+        run: pnpm install
 
       - name: build
         env:
@@ -34,8 +28,7 @@ jobs:
           PUBLIC_FIVERR_USERNAME: ${{ vars.PUBLIC_FIVERR_USERNAME }}
           PUBLIC_USER_EMAIL: ${{ vars.PUBLIC_USER_EMAIL }}
           PUBLIC_BLOG_URL: ${{ vars.PUBLIC_BLOG_URL }}
-        run: |
-          bun run build
+        run: pnpm run build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
