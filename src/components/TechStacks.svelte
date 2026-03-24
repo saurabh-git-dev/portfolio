@@ -290,7 +290,7 @@
 			class="flex flex-col justify-center gap-4 rounded-lg border border-l-6 border-indigo-500 bg-indigo-500/5 p-2 shadow-sm dark:shadow-lg"
 		>
 			<p class="text-justify text-xs">
-				From Last 2 years, AWS is my prefered cloud provider, if there are multiple things to
+				From Last 2 years, AWS is my preferred cloud provider, if there are multiple things to
 				deploy. I have been working with ECS, Lambda, S3, Cloudfront and other services and <span
 					class="font-semibold text-indigo-500 dark:text-indigo-300"
 				>
